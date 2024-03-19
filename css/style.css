@@ -1,0 +1,207 @@
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800italic - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800italic.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+body{
+    font-family: 'Poppins';
+    background-color: #DCDCDC;
+}
+h1 {
+    margin: 0;
+}
+img{
+    margin: 0;
+    display: flex;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.calculator {
+    width: 840px;
+    background-color: #ffff;
+    border-radius: 24px 24px 200px 24px;
+    padding: 56px;
+}
+
+.calendar {
+    display: flex;
+    font-weight: 700;
+    color: #716F6F;
+    font-size: 14px;
+    line-height: 21px;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.day-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input {
+    width: 160px;
+    padding: 12px 65px 12px 24px;
+    font-size: 26px;
+    line-height: 48px;
+    border: 1px solid #DCDCDC;
+    outline: none;
+}
+input:focus {
+   border: 1px solid #854DFF;
+}
+
+
+
+.month-box {
+    display: flex;
+        flex-direction: column;
+        gap: 8px;
+}
+
+
+.year-box {
+    display: flex;
+        flex-direction: column;
+        gap: 8px;
+}
+
+
+.form-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 2px;
+    background-color: #DCDCDC;
+    margin-bottom: 48px;
+}
+.form-btn button {
+   border-radius: 50%;
+   border: none;
+   width: 96px;
+   height: 96px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: 0.5s;
+}
+.btn-color {
+   background-color: black;
+}
+.btn-color:hover {
+    background-color: #854DFF;
+}
+.btn-red {
+    background-color: #854DFF;
+}
+.full-day {
+    font-weight: 800;
+    font-size: 104px;
+    line-height: 114px;
+}
+
+.years_box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.years_line_box {
+    gap: 10px;
+    display: flex;
+}
+
+.line {
+    width: 50px;
+    height: 20px;
+    background-color: #854DFF;
+}
+
+
+.months_box {
+    display: flex;
+        align-items: center;
+        gap: 8px;
+}
+
+.months_line_box {
+    display: flex;
+    gap: 10px;
+}
+
+
+.days_box {
+    display: flex;
+        align-items: center;
+        gap: 8px;
+}
+
+.days_line_box {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.hidden {
+    color: #FF5959;
+    font-style: italic;
+    display: none;
+}
+
+h3 {
+    color: #854DFF;
+}
+.error-day {
+    color: #FF5959;
+}
+.error-month {
+    color: #FF5959;
+}
+.error-year {
+    color: #FF5959;
+}

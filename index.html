@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task calculator</title>
+    <link rel="icon" href="./images/favicon-32x32.png" >
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="calendar">
+                    <div class="day-box">
+                        <h4 class="kun">day</h4>
+                        <input type="text" name="day" id="day" placeholder="dd" minlength="1" maxlength="2">
+                        <p class="error-day"></p>
+                    </div>
+                    <div class="month-box">
+                        <h4 class="oy">month</h4>
+                        <input type="text" name="month" id="month" placeholder="mm" minlength="1" maxlength="2">
+                        <p class="error-month"></p>
+                    </div>
+                    <div class="year-box">
+                        <h4 class="yil">year</h4>
+                        <input type="text" name="year" id="year" placeholder="yyyy" minlength="4" maxlength="4">
+                        <p class="error-year"></p>
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button class="btn-color" type="submit" id="btn"> <img src="./images/icon-arrow.svg" alt="" width="56"
+                            height="56"></button>
+                </div>
+            </form>
+            <div class="full-day">
+                <div class="years_box">
+                    <div class="years_line_box">
+                        <h3 class="yy">--</h3>
+                    </div>
+                    <span class="full-day_years">years</span>
+                </div>
+                <div class="months_box">
+                    <div class="months_line_box">
+                        <h3 class="mm">--</h3>
+                      
+                    </div>
+                    <span class="full-day_months">months</span>
+                </div>
+                <div class="days_box">
+                    <div class="days_line_box">
+                        <h3 class="dd">--</h3>
+                        
+                    </div>
+                    <span class="full-day_days">days</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
