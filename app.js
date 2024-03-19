@@ -20,6 +20,7 @@ btn.addEventListener("click", (e) => {
 });
 
 const date = new Date();
+console.log(date)
 let day = date.getDate();
 let month = date.getMonth();
 let year = date.getFullYear();
@@ -93,7 +94,7 @@ function calculator() {
     let ObjbrithDay = new Date(brithDay)
     let ageFull = Date.now() - ObjbrithDay
     let ageData =  new Date(ageFull)
-    let ageYear = ageData.getFullYear() - 1970;
+    let ageYear = ageData.getUTCFullYear() - 1970;
     let ageMonth =  ageData.getUTCMonth() 
     let ageDay = ageData.getUTCDay();
 

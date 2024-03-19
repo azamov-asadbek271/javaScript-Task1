@@ -205,3 +205,33 @@ h3 {
 .error-year {
     color: #FF5959;
 }
+
+@media only screen and (max-width: 600px) {
+    .calculator {
+        width: 343px;
+    }
+        .calendar {
+            font-size: 12px;
+            line-height: 18px;
+        }
+        input {
+            width: 70px;
+           font-size: 20px;
+           line-height: 30px;
+           padding: 5px;
+        }
+      .full-day  {
+        font-size: 50px;
+      }
+      .form-btn  {
+        justify-content: center;
+      }
+          .form-btn button {
+            width: 64px;
+            height: 64px;
+          }
+          .btn-img {
+            width: 32px;
+            height: 32px;
+          }
+}
